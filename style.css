@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.modo-escuro{
+    background-color: rgb(44, 81, 114);
+}
+
+.modo-escuro .container{
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+}
+
+.modo-escuro .tarefa {
+    border: 1px solid lightgray;
+}
+
+body{
+    
+    background-color: rgb(78, 146, 206);
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.adicionar{
+    height: 3rem;
+    width: 7rem;
+    background-color: rgb(39, 211, 53);
+    border: none;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.tarefa{
+    height: 3rem;
+    border: 1px solid rgb(73, 73, 73);
+    margin-right: 1rem;
+    width: 40rem;
+    border-radius: 7px;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.tarefa:focus{
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+
+.adicionar:hover{
+    background-color: white;
+    color: rgb(39, 211, 53);
+    transition: 0.5s;
+}
+
+.tarefa-item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.delete{
+    width: 30px;
+    cursor: pointer;
+}
+
+.done{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+.feito{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.img-dark{
+    width: 6%;
+    cursor: pointer;
+}
+
+#toggle-dark-mode{
+    display: none;
+}
